@@ -1,0 +1,94 @@
+Fecha;Día;Clase;Variedad;Precio
+02/01/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,000 
+02/01/2020;Jueves;Aceite de oliva Virgen;Picual;1,750 
+02/01/2020;Jueves;Aceite de oliva Lampante;Picual;1,700 
+03/01/2020;Viernes;Aceite de oliva Virgen Extra;Picual;1,975 
+03/01/2020;Viernes;Aceite de oliva Virgen;Picual;1,725 
+03/01/2020;Viernes;Aceite de oliva Lampante;Picual;1,675 
+07/01/2020;Martes;Aceite de oliva Virgen Extra;Picual;1,950 
+07/01/2020;Martes;Aceite de oliva Virgen;Picual;1,700 
+07/01/2020;Martes;Aceite de oliva Lampante;Picual;1,650 
+08/01/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;2,000 
+08/01/2020;Miercoles;Aceite de oliva Virgen;Picual;1,700 
+08/01/2020;Miercoles;Aceite de oliva Lampante;Picual;1,650 
+09/01/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,000 
+09/01/2020;Jueves;Aceite de oliva Virgen;Picual;1,700 
+09/01/2020;Jueves;Aceite de oliva Lampante;Picual;1,650 
+10/01/2020;Viernes;Aceite de oliva Virgen Extra;Picual;2,000 
+10/01/2020;Viernes;Aceite de oliva Virgen;Picual;1,700 
+10/01/2020;Viernes;Aceite de oliva Lampante;Picual;1,650 
+13/01/2020;Lunes;Aceite de oliva Virgen Extra;Picual;2,000 
+13/01/2020;Lunes;Aceite de oliva Virgen;Picual;1,700 
+13/01/2020;Lunes;Aceite de oliva Lampante;Picual;1,650 
+14/01/2020;Martes;Aceite de oliva Virgen Extra;Picual;2,000 
+14/01/2020;Martes;Aceite de oliva Virgen;Picual;1,700 
+14/01/2020;Martes;Aceite de oliva Lampante;Picual;1,650 
+15/01/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;2,000 
+15/01/2020;Miercoles;Aceite de oliva Virgen;Picual;1,700 
+15/01/2020;Miercoles;Aceite de oliva Lampante;Picual;1,650 
+16/01/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,000 
+16/01/2020;Jueves;Aceite de oliva Virgen;Picual;1,700 
+16/01/2020;Jueves;Aceite de oliva Lampante;Picual;1,650 
+17/01/2020;Viernes;Aceite de oliva Virgen Extra;Picual;2,000 
+17/01/2020;Viernes;Aceite de oliva Virgen;Picual;1,700 
+17/01/2020;Viernes;Aceite de oliva Lampante;Picual;1,650 
+20/01/2020;Lunes;Aceite de oliva Virgen Extra;Picual;2,000 
+20/01/2020;Lunes;Aceite de oliva Virgen;Picual;1,700 
+20/01/2020;Lunes;Aceite de oliva Lampante;Picual;1,650 
+21/01/2020;Martes;Aceite de oliva Virgen Extra;Picual;2,000 
+21/01/2020;Martes;Aceite de oliva Virgen;Picual;1,700 
+21/01/2020;Martes;Aceite de oliva Lampante;Picual;1,650 
+22/01/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;Sin cotización
+22/01/2020;Miercoles;Aceite de oliva Virgen;Picual;Sin cotización
+22/01/2020;Miercoles;Aceite de oliva Lampante;Picual;Sin cotización
+23/01/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,000 
+23/01/2020;Jueves;Aceite de oliva Virgen;Picual;1,800 
+23/01/2020;Jueves;Aceite de oliva Lampante;Picual;1,700 
+24/01/2020;Viernes;Aceite de oliva Virgen Extra;Picual;2,000 
+24/01/2020;Viernes;Aceite de oliva Virgen;Picual;1,800 
+24/01/2020;Viernes;Aceite de oliva Lampante;Picual;1,700 
+27/01/2020;Lunes;Aceite de oliva Virgen Extra;Picual;2,000 
+27/01/2020;Lunes;Aceite de oliva Virgen;Picual;1,800 
+27/01/2020;Lunes;Aceite de oliva Lampante;Picual;1,700 
+28/01/2020;Martes;Aceite de oliva Virgen Extra;Picual;2,000 
+28/01/2020;Martes;Aceite de oliva Virgen;Picual;1,850 
+28/01/2020;Martes;Aceite de oliva Lampante;Picual;1,700 
+29/01/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;2,025 
+29/01/2020;Miercoles;Aceite de oliva Virgen;Picual;1,825 
+29/01/2020;Miercoles;Aceite de oliva Lampante;Picual;1,725 
+30/01/2020;Jueves;Aceite de oliva Virgen Extra;Picual;Sin cotización
+30/01/2020;Jueves;Aceite de oliva Virgen;Picual;Sin cotización
+30/01/2020;Jueves;Aceite de oliva Lampante;Picual;Sin cotización
+31/01/2020;Viernes;Aceite de oliva Virgen Extra;Picual;2,050 
+31/01/2020;Viernes;Aceite de oliva Virgen;Picual;1,850 
+31/01/2020;Viernes;Aceite de oliva Lampante;Picual;1,750 
+03/02/2020;Lunes;Aceite de oliva Virgen Extra;Picual;2,050 
+03/02/2020;Lunes;Aceite de oliva Virgen;Picual;1,850 
+03/02/2020;Lunes;Aceite de oliva Lampante;Picual;1,750 
+04/02/2020;Martes;Aceite de oliva Virgen Extra;Picual;2,050 
+04/02/2020;Martes;Aceite de oliva Virgen;Picual;1,850 
+04/02/2020;Martes;Aceite de oliva Lampante;Picual;1,750 
+05/02/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;2,050 
+05/02/2020;Miercoles;Aceite de oliva Virgen;Picual;1,850 
+05/02/2020;Miercoles;Aceite de oliva Lampante;Picual;1,750 
+06/02/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,025 
+06/02/2020;Jueves;Aceite de oliva Virgen;Picual;1,825 
+06/02/2020;Jueves;Aceite de oliva Lampante;Picual;1,750 
+07/02/2020;Viernes;Aceite de oliva Virgen Extra;Picual;2,100 
+07/02/2020;Viernes;Aceite de oliva Virgen;Picual;1,850 
+07/02/2020;Viernes;Aceite de oliva Lampante;Picual;1,770 
+10/02/2020;Lunes;Aceite de oliva Virgen Extra;Picual;2,070 
+10/02/2020;Lunes;Aceite de oliva Virgen;Picual;1,850 
+10/02/2020;Lunes;Aceite de oliva Lampante;Picual;1,750 
+11/02/2020;Martes;Aceite de oliva Virgen Extra;Picual;2,070 
+11/02/2020;Martes;Aceite de oliva Virgen;Picual;1,850 
+11/02/2020;Martes;Aceite de oliva Lampante;Picual;1,750 
+12/02/2020;Miercoles;Aceite de oliva Virgen Extra;Picual;2,100 
+12/02/2020;Miercoles;Aceite de oliva Virgen;Picual;1,850 
+12/02/2020;Miercoles;Aceite de oliva Lampante;Picual;1,750 
+13/02/2020;Jueves;Aceite de oliva Virgen Extra;Picual;2,100 
+13/02/2020;Jueves;Aceite de oliva Virgen;Picual;1,850 
+13/02/2020;Jueves;Aceite de oliva Lampante;Picual;1,750 
+14/02/2020;Viernes;Aceite de oliva Virgen Extra;Picual;Sin cotización
+14/02/2020;Viernes;Aceite de oliva Virgen;Picual;Sin cotización
+14/02/2020;Viernes;Aceite de oliva Lampante;Picual;Sin cotización
