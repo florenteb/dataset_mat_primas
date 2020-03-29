@@ -26,10 +26,10 @@ def __descarga_url(url, num_retries=2, file=0):
     try:
         # Descarga del contenido de la URL
         html = urlopen(request).read().decode('iso-8859-1', 'replace')
-        filename = (url.split("/")[-1])+"_" + \
-            datetime.datetime.now().strftime('%Y%m%d_%H%M%S')+str(time.time())+".html"
         if (file == 1):
             # Almacenamos fichero en disco
+            filename = (url.split("/")[-1])+"_" + \
+                datetime.datetime.now().strftime('%Y%m%d_%H%M%S')+str(time.time())+".html"
             print("Guardando página: ", filename)
             with open(filename, "w") as file:
                 file.write(html)
@@ -41,8 +41,6 @@ def __descarga_url(url, num_retries=2, file=0):
                 # Reintento ante errores 5XX HTTP
                 return __descarga_url(url, num_retries-1)
     return html
-
-# extrae por fechas
 
 
 def __extrae_por_fecha(fecha_ini, fecha_fin):
