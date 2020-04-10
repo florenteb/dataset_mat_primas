@@ -1,0 +1,190 @@
+index;Producto;Precio;Año;Mes;Origen
+0;IPC mensual mes a mes;-0.4;2019;03;Eurostat
+1;IPC mensual mes a mes;0;2019;04;Eurostat
+2;IPC mensual mes a mes;0.4;2019;05;Eurostat
+3;IPC mensual mes a mes;0.4;2019;06;Eurostat
+4;IPC mensual mes a mes;-0.3;2019;07;Eurostat
+5;IPC mensual mes a mes;0.1;2019;08;Eurostat
+6;IPC mensual mes a mes;-0.1;2019;09;Eurostat
+7;IPC mensual mes a mes;1.5;2019;10;Eurostat
+8;IPC mensual mes a mes;0;2019;11;Eurostat
+9;IPC mensual mes a mes;-0.2;2019;12;Eurostat
+12;IPC anual año a año;2;2017;1;Eurostat
+13;IPC anual año a año;2;2017;2;Eurostat
+14;IPC anual año a año;2;2017;3;Eurostat
+15;IPC anual año a año;2;2017;4;Eurostat
+16;IPC anual año a año;2;2017;5;Eurostat
+17;IPC anual año a año;2;2017;6;Eurostat
+18;IPC anual año a año;2;2017;7;Eurostat
+19;IPC anual año a año;2;2017;8;Eurostat
+20;IPC anual año a año;2;2017;9;Eurostat
+21;IPC anual año a año;2;2017;10;Eurostat
+22;IPC anual año a año;2;2017;11;Eurostat
+23;IPC anual año a año;2;2017;12;Eurostat
+24;IPC anual año a año;1.7;2018;1;Eurostat
+25;IPC anual año a año;1.7;2018;2;Eurostat
+26;IPC anual año a año;1.7;2018;3;Eurostat
+27;IPC anual año a año;1.7;2018;4;Eurostat
+28;IPC anual año a año;1.7;2018;5;Eurostat
+29;IPC anual año a año;1.7;2018;6;Eurostat
+30;IPC anual año a año;1.7;2018;7;Eurostat
+31;IPC anual año a año;1.7;2018;8;Eurostat
+32;IPC anual año a año;1.7;2018;9;Eurostat
+33;IPC anual año a año;1.7;2018;10;Eurostat
+34;IPC anual año a año;1.7;2018;11;Eurostat
+35;IPC anual año a año;1.7;2018;12;Eurostat
+36;IPC anual año a año;0.8;2019;1;Eurostat
+37;IPC anual año a año;0.8;2019;2;Eurostat
+38;IPC anual año a año;0.8;2019;3;Eurostat
+39;IPC anual año a año;0.8;2019;4;Eurostat
+40;IPC anual año a año;0.8;2019;5;Eurostat
+41;IPC anual año a año;0.8;2019;6;Eurostat
+42;IPC anual año a año;0.8;2019;7;Eurostat
+43;IPC anual año a año;0.8;2019;8;Eurostat
+44;IPC anual año a año;0.8;2019;9;Eurostat
+45;IPC anual año a año;0.8;2019;10;Eurostat
+46;IPC anual año a año;0.8;2019;11;Eurostat
+47;IPC anual año a año;0.8;2019;12;Eurostat
+48;Ind. prec. agrícolas trimestre a trimestre;15.09;2017;1;Eurostat
+49;Ind. prec. agrícolas trimestre a trimestre;15.09;2017;2;Eurostat
+50;Ind. prec. agrícolas trimestre a trimestre;15.09;2017;3;Eurostat
+51;Ind. prec. agrícolas trimestre a trimestre;30.89;2017;4;Eurostat
+52;Ind. prec. agrícolas trimestre a trimestre;30.89;2017;5;Eurostat
+53;Ind. prec. agrícolas trimestre a trimestre;30.89;2017;6;Eurostat
+54;Ind. prec. agrícolas trimestre a trimestre;21.22;2017;8;Eurostat
+55;Ind. prec. agrícolas trimestre a trimestre;21.22;2017;9;Eurostat
+56;Ind. prec. agrícolas trimestre a trimestre;21.22;2017;7;Eurostat
+57;Ind. prec. agrícolas trimestre a trimestre;10.1;2017;10;Eurostat
+58;Ind. prec. agrícolas trimestre a trimestre;10.1;2017;11;Eurostat
+59;Ind. prec. agrícolas trimestre a trimestre;10.1;2017;12;Eurostat
+60;Ind. prec. agrícolas trimestre a trimestre;-5.94;2018;1;Eurostat
+61;Ind. prec. agrícolas trimestre a trimestre;-5.94;2018;2;Eurostat
+62;Ind. prec. agrícolas trimestre a trimestre;-5.94;2018;3;Eurostat
+63;Ind. prec. agrícolas trimestre a trimestre;-30.89;2018;4;Eurostat
+64;Ind. prec. agrícolas trimestre a trimestre;-30.89;2018;5;Eurostat
+65;Ind. prec. agrícolas trimestre a trimestre;-30.89;2018;6;Eurostat
+66;Ind. prec. agrícolas trimestre a trimestre;-29.74;2018;8;Eurostat
+67;Ind. prec. agrícolas trimestre a trimestre;-29.74;2018;9;Eurostat
+68;Ind. prec. agrícolas trimestre a trimestre;-29.74;2018;7;Eurostat
+69;Ind. prec. agrícolas trimestre a trimestre;-26.56;2018;10;Eurostat
+70;Ind. prec. agrícolas trimestre a trimestre;-26.56;2018;11;Eurostat
+71;Ind. prec. agrícolas trimestre a trimestre;-26.56;2018;12;Eurostat
+72;Ind. prec. agrícolas trimestre a trimestre;-28.12;2019;1;Eurostat
+73;Ind. prec. agrícolas trimestre a trimestre;-28.12;2019;2;Eurostat
+74;Ind. prec. agrícolas trimestre a trimestre;-28.12;2019;3;Eurostat
+75;Ind. prec. agrícolas trimestre a trimestre;-19.2;2019;4;Eurostat
+76;Ind. prec. agrícolas trimestre a trimestre;-19.2;2019;5;Eurostat
+77;Ind. prec. agrícolas trimestre a trimestre;-19.2;2019;6;Eurostat
+78;Ind. prec. agrícolas trimestre a trimestre;-17.55;2019;8;Eurostat
+79;Ind. prec. agrícolas trimestre a trimestre;-17.55;2019;9;Eurostat
+80;Ind. prec. agrícolas trimestre a trimestre;-17.55;2019;7;Eurostat
+81;Ind. prec. agrícolas trimestre a trimestre;-22.05;2019;10;Eurostat
+82;Ind. prec. agrícolas trimestre a trimestre;-22.05;2019;11;Eurostat
+83;Ind. prec. agrícolas trimestre a trimestre;-22.05;2019;12;Eurostat
+84;Aceite de oliva Lampante;3.335947368421053;2017;1;Infaoliva
+85;Aceite de oliva Virgen;3.434999999999999;2017;1;Infaoliva
+86;Aceite de oliva Virgen Extra;3.525631578947369;2017;1;Infaoliva
+87;Aceite de oliva Lampante;3.5516315789473683;2017;2;Infaoliva
+88;Aceite de oliva Virgen;3.6316315789473688;2017;2;Infaoliva
+89;Aceite de oliva Virgen Extra;3.7025263157894734;2017;2;Infaoliva
+90;Aceite de oliva Lampante;3.5981578947368424;2017;3;Infaoliva
+91;Aceite de oliva Virgen;3.6564210526315795;2017;3;Infaoliva
+92;Aceite de oliva Virgen Extra;3.731684210526316;2017;3;Infaoliva
+93;Aceite de oliva Lampante;3.7026249999999994;2017;4;Infaoliva
+94;Aceite de oliva Virgen;3.7558124999999993;2017;4;Infaoliva
+95;Aceite de oliva Virgen Extra;3.8184375;2017;4;Infaoliva
+96;Aceite de oliva Lampante;3.8075294117647065;2017;5;Infaoliva
+97;Aceite de oliva Virgen;3.8573529411764715;2017;5;Infaoliva
+98;Aceite de oliva Virgen Extra;3.9063529411764706;2017;5;Infaoliva
+99;Aceite de oliva Lampante;3.7070000000000007;2017;6;Infaoliva
+100;Aceite de oliva Virgen;3.775611111111112;2017;6;Infaoliva
+101;Aceite de oliva Virgen Extra;3.859111111111111;2017;6;Infaoliva
+102;Aceite de oliva Lampante;3.5618823529411765;2017;7;Infaoliva
+103;Aceite de oliva Virgen;3.616705882352941;2017;7;Infaoliva
+104;Aceite de oliva Virgen Extra;3.700764705882353;2017;7;Infaoliva
+105;Aceite de oliva Lampante;3.624153846153846;2017;8;Infaoliva
+106;Aceite de oliva Virgen;3.6837692307692302;2017;8;Infaoliva
+107;Aceite de oliva Virgen Extra;3.734384615384615;2017;8;Infaoliva
+108;Aceite de oliva Lampante;3.551842105263158;2017;9;Infaoliva
+109;Aceite de oliva Virgen;3.6055263157894735;2017;9;Infaoliva
+110;Aceite de oliva Virgen Extra;3.670578947368421;2017;9;Infaoliva
+111;Aceite de oliva Lampante;3.5509411764705887;2017;10;Infaoliva
+112;Aceite de oliva Virgen;3.6101176470588237;2017;10;Infaoliva
+113;Aceite de oliva Virgen Extra;3.6630588235294117;2017;10;Infaoliva
+114;Aceite de oliva Lampante;3.3867368421052633;2017;11;Infaoliva
+115;Aceite de oliva Virgen;3.447105263157895;2017;11;Infaoliva
+116;Aceite de oliva Virgen Extra;3.4972105263157895;2017;11;Infaoliva
+117;Aceite de oliva Lampante;3.3638823529411765;2017;12;Infaoliva
+118;Aceite de oliva Virgen;3.419470588235295;2017;12;Infaoliva
+119;Aceite de oliva Virgen Extra;3.466058823529412;2017;12;Infaoliva
+120;Aceite de oliva Lampante;3.4061578947368427;2018;1;Infaoliva
+121;Aceite de oliva Virgen;3.4582631578947365;2018;1;Infaoliva
+122;Aceite de oliva Virgen Extra;3.5102631578947374;2018;1;Infaoliva
+123;Aceite de oliva Lampante;3.2560000000000002;2018;2;Infaoliva
+124;Aceite de oliva Virgen;3.3143076923076924;2018;2;Infaoliva
+125;Aceite de oliva Virgen Extra;3.409692307692308;2018;2;Infaoliva
+126;Aceite de oliva Lampante;2.705538461538462;2018;3;Infaoliva
+127;Aceite de oliva Virgen;2.795769230769231;2018;3;Infaoliva
+128;Aceite de oliva Virgen Extra;3.019846153846154;2018;3;Infaoliva
+129;Aceite de oliva Lampante;2.621466666666667;2018;4;Infaoliva
+130;Aceite de oliva Virgen;2.7013333333333325;2018;4;Infaoliva
+131;Aceite de oliva Virgen Extra;2.9289333333333327;2018;4;Infaoliva
+132;Aceite de oliva Lampante;2.2497058823529414;2018;5;Infaoliva
+133;Aceite de oliva Virgen;2.3025294117647066;2018;5;Infaoliva
+134;Aceite de oliva Virgen Extra;2.6420588235294122;2018;5;Infaoliva
+135;Aceite de oliva Lampante;2.3351764705882356;2018;6;Infaoliva
+136;Aceite de oliva Virgen;2.3998235294117647;2018;6;Infaoliva
+137;Aceite de oliva Virgen Extra;2.6470588235294112;2018;6;Infaoliva
+138;Aceite de oliva Lampante;2.401684210526316;2018;7;Infaoliva
+139;Aceite de oliva Virgen;2.4554736842105256;2018;7;Infaoliva
+140;Aceite de oliva Virgen Extra;2.627263157894737;2018;7;Infaoliva
+141;Aceite de oliva Lampante;2.3980000000000006;2018;8;Infaoliva
+142;Aceite de oliva Virgen;2.452444444444444;2018;8;Infaoliva
+143;Aceite de oliva Virgen Extra;2.626333333333333;2018;8;Infaoliva
+144;Aceite de oliva Lampante;2.433846153846154;2018;9;Infaoliva
+145;Aceite de oliva Virgen;2.467769230769231;2018;9;Infaoliva
+146;Aceite de oliva Virgen Extra;2.6649230769230767;2018;9;Infaoliva
+147;Aceite de oliva Lampante;2.306769230769231;2018;10;Infaoliva
+148;Aceite de oliva Virgen;2.350076923076923;2018;10;Infaoliva
+149;Aceite de oliva Virgen Extra;2.5676363636363635;2018;10;Infaoliva
+150;Aceite de oliva Lampante;2.4109999999999996;2018;11;Infaoliva
+151;Aceite de oliva Virgen;2.461117647058823;2018;11;Infaoliva
+152;Aceite de oliva Virgen Extra;2.6505882352941175;2018;11;Infaoliva
+153;Aceite de oliva Lampante;2.31175;2018;12;Infaoliva
+154;Aceite de oliva Virgen;2.38475;2018;12;Infaoliva
+155;Aceite de oliva Virgen Extra;2.649;2018;12;Infaoliva
+156;Aceite de oliva Lampante;2.2029230769230765;2019;1;Infaoliva
+157;Aceite de oliva Virgen;2.2553076923076927;2019;1;Infaoliva
+158;Aceite de oliva Virgen Extra;2.569692307692307;2019;1;Infaoliva
+159;Aceite de oliva Lampante;2.1543076923076923;2019;2;Infaoliva
+160;Aceite de oliva Virgen;2.2123846153846154;2019;2;Infaoliva
+161;Aceite de oliva Virgen Extra;2.5588461538461535;2019;2;Infaoliva
+162;Aceite de oliva Lampante;1.9534666666666667;2019;3;Infaoliva
+163;Aceite de oliva Virgen;2.0214666666666665;2019;3;Infaoliva
+164;Aceite de oliva Virgen Extra;2.415066666666667;2019;3;Infaoliva
+165;Aceite de oliva Lampante;1.9285999999999999;2019;4;Infaoliva
+166;Aceite de oliva Virgen;1.9839333333333333;2019;4;Infaoliva
+167;Aceite de oliva Virgen Extra;2.3406000000000002;2019;4;Infaoliva
+168;Aceite de oliva Lampante;1.8371666666666668;2019;5;Infaoliva
+169;Aceite de oliva Virgen;1.8893333333333333;2019;5;Infaoliva
+170;Aceite de oliva Virgen Extra;2.2116666666666664;2019;5;Infaoliva
+171;Aceite de oliva Lampante;1.884076923076923;2019;6;Infaoliva
+172;Aceite de oliva Virgen;1.9456153846153852;2019;6;Infaoliva
+173;Aceite de oliva Virgen Extra;2.1655384615384614;2019;6;Infaoliva
+174;Aceite de oliva Lampante;2.014538461538462;2019;7;Infaoliva
+175;Aceite de oliva Virgen;2.098230769230769;2019;7;Infaoliva
+176;Aceite de oliva Virgen Extra;2.280076923076923;2019;7;Infaoliva
+177;Aceite de oliva Lampante;2.001;2019;8;Infaoliva
+178;Aceite de oliva Virgen;2.007;2019;8;Infaoliva
+179;Aceite de oliva Lampante;1.9653999999999996;2019;9;Infaoliva
+180;Aceite de oliva Virgen;2.0108666666666664;2019;9;Infaoliva
+181;Aceite de oliva Virgen Extra;2.138266666666667;2019;9;Infaoliva
+182;Aceite de oliva Lampante;1.8691666666666673;2019;10;Infaoliva
+183;Aceite de oliva Virgen;1.9127777777777775;2019;10;Infaoliva
+184;Aceite de oliva Virgen Extra;2.026111111111111;2019;10;Infaoliva
+185;Aceite de oliva Lampante;1.8462500000000004;2019;11;Infaoliva
+186;Aceite de oliva Virgen;1.8968749999999996;2019;11;Infaoliva
+187;Aceite de oliva Virgen Extra;2.001666666666667;2019;11;Infaoliva
+188;Aceite de oliva Lampante;1.7316666666666662;2019;12;Infaoliva
+189;Aceite de oliva Virgen;1.7810000000000001;2019;12;Infaoliva
+190;Aceite de oliva Virgen Extra;1.9549999999999996;2019;12;Infaoliva
