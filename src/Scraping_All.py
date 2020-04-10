@@ -61,7 +61,7 @@ if '__main__' == __name__:
         df1.rename(columns={'Frecuente' : 'Precio'}, inplace= True) 
         Save_df_to_csv(df1,'MercAlicante','2017-01-01', '2019-12-31')
         print('Total rows: ', len(df1))
-    if 1==0:
+    if 1==1:
         # MercaMadrid
         df1= pd.read_csv('MercaMadrid_20190101_20191231.csv', sep=';')
         df2= pd.read_csv('MercaMadrid_20180101_20181231.csv', sep=';')
@@ -70,9 +70,11 @@ if '__main__' == __name__:
         print( 'Size: ', len(df1), len(df2), len(df3))
         df1 = pd.concat([df1.reset_index(), df2.reset_index()], ignore_index=True)
         df1 = pd.concat([df1.reset_index(), df3.reset_index()], ignore_index=True)
-        columns = ['Producto','Precio frecuente','Año','Mes','Origen']
+        # Algunos registros no tienen informado el campo Producto, pero sí el campo Variedad
+        
+        columns = ['Variedad','Precio frecuente','Año','Mes','Origen']
         df1 = df1[columns]
-        df1.rename(columns={'Precio frecuente' : 'Precio'}, inplace= True)
+        df1.rename(columns={'Precio frecuente' : 'Precio', 'Variedad':'Producto'}, inplace= True)
         Save_df_to_csv(df1,'MercaMadrid','2017-01-01', '2019-12-31')
         print('Total rows: ', len(df1))
 
@@ -84,4 +86,4 @@ if '__main__' == __name__:
         print( 'Size: ', len(df1), len(df2))
         df1 = pd.concat([df1.reset_index(), df2.reset_index()], ignore_index=True)
         print('Total rows: ', len(df1))
-        df1.head()
+        Save_df_to_csv(df1,'Mercados Centrales','2017-01-01', '2019-12-31')
