@@ -1,38 +1,41 @@
 
-import time
-from tqdm import tqdm
 import pandas as pd
+from tools import *
 
 from bs4 import BeautifulSoup
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.keys import Keys
+#from selenium.webdriver.support.ui import Select
+#from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import UnexpectedAlertPresentException as WDE
-from selenium.common.exceptions import TimeoutException as WDE_TimeOut
-
-url ='https://www.mercamadrid.es/estadisticas/'
-browser_visible=False
+#from selenium.common.exceptions import UnexpectedAlertPresentException as WDE
+#from selenium.common.exceptions import TimeoutException as WDE_TimeOut
 
 def Chrome_driver():
     # Chrome driver for development and text use
     from selenium import webdriver
-    browser = webdriver.Chrome()
-    browser_visible=True
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('--log-level=3') 
+    browser = webdriver.Chrome(chrome_options=options)
     return browser
 
 def Phantom_driver():
     from selenium import webdriver
-    browser = webdriver.PhantomJS()
-    browser_visible=False
+    
+    # User-agent change
+    user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36' 
+    cap = webdriver.DesiredCapabilities.PHANTOMJS
+    cap["phantomjs.page.settings.userAgent"] = user_agent
+    browser = webdriver.PhantomJS(desired_capabilities=cap)
+    #browser = webdriver.PhantomJS()
     return browser
 
-def Close_driver():
+def Close_driver(browser):
     browser.close()
     print('Closing connection')
 
-def Set_Mercado_Filter(mercado_value):
+def Set_Mercado_Filter(browser, mercado_value):
     mercado = browser.find_elements_by_id('markets_filter')
     for option in mercado[0].find_elements_by_tag_name('option'):
         if option.text == mercado_value:
@@ -40,25 +43,52 @@ def Set_Mercado_Filter(mercado_value):
             break
     return str(option.text)
 
-def Set_Start_Date(fecha):
+def Set_Start_Date(browser,fecha):
     fecha_inicio = browser.find_element_by_id('from_filter')
     fecha_inicio.send_keys(fecha)
     return fecha_inicio.get_attribute('value')
 
-def Set_End_Date(fecha):
+def Set_End_Date(browser, fecha):
     fecha_fin = browser.find_element_by_id('to_filter')
     fecha_fin.send_keys(fecha)
     return fecha_fin.get_attribute('value')
 
-def Loading_dataset(columns_name):
-        
-    '''
-    
-    ''' 
+def Loading_dataset(browser, columns_name):
     ds = pd.DataFrame(columns=columns_name)
+    
+    return (ds)
+
+def Scraping_MercaMardrid(br, mercado, fecha_inicio, fecha_fin):
+    if br=='Phantom':
+        browser = Phantom_driver()
+    elif br=='Chrome':
+        browser = Chrome_driver()
+    else:
+        browser = Phantom_driver()
+        
+    url ='https://www.mercamadrid.es/estadisticas/'
+    browser.implicitly_wait(60)
+    browser.get(url)
+    #print('')
+    #print('MercaMadrid Data Extractor')
+    #print('--------------------------')
+    #'MERCADO CENTRAL DE FRUTAS'
+    print('Mercado: ' + Set_Mercado_Filter(browser, mercado),
+        'Fecha inicio: ' + Set_Start_Date(browser, fecha_inicio),
+        'Fecha fin: ' + Set_End_Date(browser, fecha_fin)
+        )
+    print('------------')
+    print('Waiting for webpage')
+    
+    browser.find_element_by_id("btnBuscar").submit()
+    condition= EC.visibility_of_element_located((By.CLASS_NAME,'estadisticas-zima-lista'))
+    WebDriverWait(browser, 60).until(condition)
+    columns_name=['Producto', 'kilos producto', 'Variedad', 'Kilos variedad', 'Precio max', 'Precio min', 'Precio frecuente']
+    #ds=pd.DataFrame(Loading_dataset(browser,columns_name))
+
     page = BeautifulSoup(browser.page_source, "html.parser")
     lista = page.find_all('div', class_='estadisticas-zima-lista-fila')
-    
+    #assert lista.count()!=0
     row_list=[]
     
     for elemento in lista:
@@ -74,32 +104,36 @@ def Loading_dataset(columns_name):
         })
         row_list.append(my_dict)
     
-    ds=pd.DataFrame(row_list, columns=columns_name) 
+    df=pd.DataFrame(row_list, columns=columns_name) 
+     # New column with Year
+    Año = [Extract_Year_from_date(fecha_inicio)] * len(df)
+    df['Año']=Año
+
+    # New column with Month
+    Mes = [Extract_Month_from_date(fecha_inicio)] * len(df)
+    df['Mes']=Mes
     
-    return (ds)
+    # New columns with Data Source
+    origen = ['MecaMadrid'] * len(df)
+    df['Origen'] = origen
+    
+    #if br!='Phantom' : input ('Press ENTER to close the browser')
+    Close_driver(browser)
+    return(df)
+
+    
+    
 
 # Main program    
 if '__main__' == __name__:
-    browser = Phantom_driver()
-    #browser = Chrome_driver()
-    browser.implicitly_wait(10)
-    browser.get(url)
+    #Options for browser:  Phantom or Chrome'
+    browser = 'Chrome'
+    silence = True
+    fecha_inicio='2020-01-01'
+    fecha_fin = str(last_day_Month(fecha_inicio))
+    df= Scraping_MercaMardrid(browser,'MERCADO CENTRAL DE FRUTAS', fecha_inicio, fecha_fin)
+    print(df.head())
+    print(df.shape())
+    
 
-    print('')
-    print('MercaMadrid Data Extractor')
-    print('--------------------------')
-    print('Filter 1: ' + Set_Mercado_Filter('MERCADO CENTRAL DE FRUTAS'))
-    print('Filter 2: ' + Set_Start_Date('01/03/2020') ) 
-    print('Filter 3: ' + Set_End_Date('25/03/2020'))
-    print('------------')
-    print('Waiting for webpage')
-
-    browser.find_element_by_id("btnBuscar").submit()
-    columns_name=['Producto', 'kilos producto', 'Variedad', 'Kilos variedad', 'Precio max', 'Precio min', 'Precio frecuente']
-    ds=pd.DataFrame(Loading_dataset(columns_name))
-
-    print('------------')
-    print(ds)
-
-    if browser_visible==True : print ('Press ENTER to close the browser')
-    Close_driver()
+    
