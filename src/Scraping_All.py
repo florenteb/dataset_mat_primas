@@ -1,18 +1,24 @@
 from tools import *
 from Scraping_MercaAlicante import *
 from Scraping_MercaMadrid import *
+import datetime as dt
 
-
+def date_vector(año_inicio, año_fin, mes_inicio, mes_final, dia):
+    # It generates a date vector with dates.
+    # Output: a vector of strings 
+    fecha=[]
+    for año in range(año_inicio, año_fin +1):
+        for mes in range(mes_inicio,mes_final +1):
+            fecha.append(str(dt.date(año, mes, dia)))
+    return(fecha)
+    
 
 # Main program    
 if '__main__' == __name__:
     # Date Extraction from MercAlicante
     
-    fecha_inicio = ['2019-01-01', '2019-02-01', '2019-03-01', '2019-04-01', 
-        '2019-05-01', '2019-06-01', '2019-07-01', '2019-08-01', '2019-09-01', '2019-10-01', 
-        '2019-11-01', '2019-12-01']
-    
-    
+    fecha_inicio = date_vector(2017, 2019, 1, 12, 1)
+        
     if 1==0:
         print('MercAlicante Data Extractor')
         print('--------------------------')
@@ -61,7 +67,7 @@ if '__main__' == __name__:
         df1.rename(columns={'Frecuente' : 'Precio'}, inplace= True) 
         Save_df_to_csv(df1,'MercAlicante','2017-01-01', '2019-12-31')
         print('Total rows: ', len(df1))
-    if 1==1:
+    if 1==0:
         # MercaMadrid
         df1= pd.read_csv('MercaMadrid_20190101_20191231.csv', sep=';')
         df2= pd.read_csv('MercaMadrid_20180101_20181231.csv', sep=';')
@@ -78,7 +84,7 @@ if '__main__' == __name__:
         Save_df_to_csv(df1,'MercaMadrid','2017-01-01', '2019-12-31')
         print('Total rows: ', len(df1))
 
-    if 1==1:
+    if 1==0:
         # Unificación MercAlicante y MercaMadrid
         df1= pd.read_csv('MercAlicante_20170101_20191231.csv', sep=';')
         df2= pd.read_csv('MercaMadrid_20170101_20191231.csv', sep=';')
