@@ -2,8 +2,6 @@
 
 ## Descripción
 
-Esta práctica se ha realizado bajo el contexto de la asignatura _Tipología y ciclo de vida de los datos_, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya. En ella, se aplican técnicas de _web scraping_ mediante el lenguaje de programación Python para extraer así datos de la web _PlaneCrashInfo_ y generar un _dataset_.
-
 El objetivo de esta práctica es la aplicación de distintas técnicas de extracción de datos para la generación de un _dataset_ que será utilizado más adelante con fines analíticos. 
 El conjunto de datos generado contiene los precios mensuales de varias materias primas obtenidas de mercados mayoristas y fabricantes, así como precios agregados e índices de precios (generales y agrícolas) con periodicidad igual o menor (trimestral y anual). Algunas de las variables incluyen el mes y año, el nombre del producto y su precio en euros. El rango temporal se sitúa entre los años 2017 y 2019, ambos incluidos, aunque no se dispone de todos los datos en esos tres años.
 
