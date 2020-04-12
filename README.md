@@ -21,6 +21,11 @@ La práctica ha sido realizada por **Jesús González Leal** y **Francisco Enriq
 * **src/api_eurostat.py**: contiene la implementación de los métodos que extraen datos de las estadísticas seleccionadas de Eurostat y generan el dataset correspondiente.
 * **src/tools.py**: contiene la implementación de distintos métodos útiles para el conjunto del código.
 
+## Ficheros adicionales
+* **csv/Eurostat_Infaoliva_MercadosCentrales_20170101_20191231.csv**: es el dataset final generado.
+* **pdf/PRA1.pdf**: contiene las respuestas de la práctica.
+
+
 ## Recursos
 1. Subirats, L., Calvo, M. (2018). _Web Scraping_. Editorial UOC.
 1. Lawson, R. (2015). _Web Scraping with Python_. Packt Publishing Ltd. Chapter 2. Scraping the Data.
