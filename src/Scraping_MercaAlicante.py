@@ -37,10 +37,12 @@ def Scraping_MercAlicante(producto, familia, categoria, fecha_Inicio, fecha_Fin)
     resp = requests.get(url)
     if (resp.status_code != 200):
         print("Error al obtener datos: ", resp)
-
+        exit()
+    resp.encoding ='ISO-8859-1'
+    
     columns_name =['Producto','Variedad','Maximo','Minimo','Frecuente']
     
-    list = pd.read_html(url) # Returns list of all tables on page
+    list = pd.read_html(url,  encoding="ISO-8859-1") # Returns list of all tables on page
     table = pd.concat(list)
     table.columns= columns_name
 
@@ -55,6 +57,10 @@ def Scraping_MercAlicante(producto, familia, categoria, fecha_Inicio, fecha_Fin)
     # New columns with Data Source
     origen = ['MecAlicante'] * len(table)
     table['Origen'] = origen
+
+    columns = ['Producto','Frecuente','Año','Mes','Origen']
+    table = table[columns] # Select the columns
+    table.rename(columns={'Frecuente' : 'Precio'}, inplace= True) 
     
     return (table)
 
@@ -63,13 +69,13 @@ if '__main__' == __name__:
     producto='' #Void all products
     familia='' # Void all families
     categoria = '106' # Frutas
-    fecha_Inicio = '2020-03-01'
+    fecha_Inicio = '2017-01-01'
     # last day of the month or current day
     fecha_Fin = str(last_day_Month(fecha_Inicio))
     df_Mercalicante = Scraping_MercAlicante(producto, familia, 
         categoria, fecha_Inicio, fecha_Fin)
     
-    print(df_Mercalicante)
+    print(df_Mercalicante.head())
 
 
 
