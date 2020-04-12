@@ -35,3 +35,4 @@ def Save_df_to_csv(df, name, fecha_ini, fecha_fin):
         nombre_fichero = name + "_" + fecha_ini + "_" + fecha_fin + ".csv"
         df.to_csv(nombre_fichero, sep=';', encoding='utf-8', index=False)
         print("Fichero", nombre_fichero, "generado.")
+        return(nombre_fichero)
