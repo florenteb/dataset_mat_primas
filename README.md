@@ -28,4 +28,4 @@ La práctica ha sido realizada por **Jesús González Leal** y **Francisco Enriq
 
 ## Recursos
 1. Subirats, L., Calvo, M. (2018). _Web Scraping_. Editorial UOC.
-1. Lawson, R. (2015). _Web Scraping with Python_. Packt Publishing Ltd. Chapter 2. Scraping the Data.
+2. Lawson, R. (2015). _Web Scraping with Python_. Packt Publishing Ltd. Chapter 2. Scraping the Data.
