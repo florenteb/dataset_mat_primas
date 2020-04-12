@@ -1,3 +1,11 @@
+'''
+    Scraping MercaMadrid
+    =====================
+    Extract vegetable price by month of Central Market Merca Madrid
+    web site: https:\\www.mercamadrid.es
+    Creation Date: 2020/04/10
+    
+'''
 
 import pandas as pd
 from tools import *
@@ -117,12 +125,13 @@ def Scraping_MercaMardrid(br, mercado, fecha_inicio, fecha_fin):
     origen = ['MecaMadrid'] * len(df)
     df['Origen'] = origen
     
+    columns = ['Variedad','Precio frecuente','Año','Mes','Origen']
+    df = df[columns]
+    df.rename(columns={'Precio frecuente' : 'Precio', 'Variedad':'Producto'}, inplace= True)
+
     #if br!='Phantom' : input ('Press ENTER to close the browser')
     Close_driver(browser)
     return(df)
-
-    
-    
 
 # Main program    
 if '__main__' == __name__:
@@ -133,7 +142,6 @@ if '__main__' == __name__:
     fecha_fin = str(last_day_Month(fecha_inicio))
     df= Scraping_MercaMardrid(browser,'MERCADO CENTRAL DE FRUTAS', fecha_inicio, fecha_fin)
     print(df.head())
-    print(df.shape())
     
 
     
