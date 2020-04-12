@@ -5,6 +5,7 @@
 El objetivo de esta práctica es la aplicación de distintas técnicas de extracción de datos para la generación de un _dataset_ que será utilizado más adelante con fines analíticos. 
 El conjunto de datos generado contiene los precios mensuales de varias materias primas obtenidas de mercados mayoristas y fabricantes, así como precios agregados e índices de precios (generales y agrícolas) con periodicidad igual o menor (trimestral y anual). Algunas de las variables incluyen el mes y año, el nombre del producto y su precio en euros. El rango temporal se sitúa entre los años 2017 y 2019, ambos incluidos, aunque no se dispone de todos los datos en esos tres años.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3749020.svg)](https://doi.org/10.5281/zenodo.3749020)
 
 ## Miembros del equipo
 
