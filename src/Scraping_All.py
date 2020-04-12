@@ -1,6 +1,7 @@
 from tools import *
 from Scraping_MercaAlicante import *
 from Scraping_MercaMadrid import *
+from genera_dataset_eurostat_infaoliva import *
 import datetime as dt
 from time import time
 
@@ -96,4 +97,23 @@ if '__main__' == __name__:
     # Unificando datasets
     if 1==1:
         print('Total rows: ', len(df))
-        Save_df_to_csv(df,'Mercados Centrales', fecha_inicio[0], str(last_day_Month(fecha_inicio[-1])))
+        file_name_mercados= Save_df_to_csv(df,'Mercados Centrales', fecha_inicio[0], str(last_day_Month(fecha_inicio[-1])))
+    if 1==1: 
+        # 
+        print("Eurostat and infaoliva Extractor")
+        file_name_Infaoliva = Scraper_Infaoliva_Eurostat()
+        if file_name_Infaoliva == None:
+            print('Error al generar el fichero de Infaoliva y Eurostat')
+        else:
+            # Unimos los dos datasets
+            # En ejecución bath marcar la siguiente línea para no ejecución.
+            #file_name_mercados='Mercados Centrales_20170101_20191231.csv'
+            df_infaoliva = pd.read_csv(file_name_Infaoliva, sep=';')
+            df_mercados = pd.read_csv(file_name_mercados, sep=';')
+            dfTotal = pd.concat([df_infaoliva, df_mercados], ignore_index=True)
+
+            # En ejecución bath marcar la siguiente línea para no ejecución y desmarcar la segunda
+            #file_name= Save_df_to_csv(dfTotal,'Eurostat_Infaoliva_MercadosCentrales', '2017-01-01', '2019-12-31')
+            file_name= Save_df_to_csv(dfTotal,'Eurostat_Infaoliva_MercadosCentrales', fecha_inicio[0], str(last_day_Month(fecha_inicio[-1])))
+            print('Fichero creado: ', file_name)
+            print('Total rows: ', len(dfTotal))
